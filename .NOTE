@@ -2,16 +2,21 @@
 =========================================================================================================================
 https://github.com/Cartucho/mAP
 
-1. Copy the ground-truth files (from YOLO dataset) into the folder input/ground-truth/ (~/Work/darknet/data/cctv/cp_for_mAP.py)
+1. Copy the ground-truth files (from YOLO dataset) into input/ground-truth/ 
+   Copy the all the images corresponding to the ground-truth files into input/images/
+   (if needed, use ~/Work/darknet/data/cctv/cp_for_mAP.py)
 
 2. Convert the ground-truth files into VOC format (scripts/extra/convert_gt_yolo.py)
    - original *.txt files are moved to input/input/ground-truth/backup
 
-3. Create the detection-results files at input/detection-results (by using trt_yolo_spacenorm.py with --image_list option)
+3. Copy all the input images to input/images
+   - 
 
-4. Run the code: python main.py  (--> generate outputs at ./output)
+4. Create the detection-results files at input/detection-results (by using trt_yolo_spacenorm.py with --image_list option)
 
-5. Optional (if you want to see the animation):
+5. Run the code: python main.py  (--> generate outputs at ./output)
+
+6. Optional (if you want to see the animation):
    Insert the images into the folder input/images-optional/
 
 $ python main.py -na   --> no animation, no output images

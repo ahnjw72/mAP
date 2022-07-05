@@ -56,7 +56,7 @@ if len(txt_list) == 0:
   sys.exit()
 
 for tmp_file in txt_list:
-  #print(tmp_file)
+  print(tmp_file)
   # 1. check that there is an image with that name
   ## get name before ".txt"
   image_name = tmp_file.split(".txt",1)[0]
@@ -65,7 +65,7 @@ for tmp_file in txt_list:
   for fname in os.listdir('../images'):
     if fname.startswith(image_name):
       ## image found
-      #print(fname)
+      print(fname)
       img = cv2.imread('../images/' + fname)
       ## get image width and height
       img_height, img_width = img.shape[:2]
