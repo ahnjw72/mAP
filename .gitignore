@@ -3,3 +3,4 @@ output_backup/
 output_images*/
 output_mAP/
 input/
+.temp_files/

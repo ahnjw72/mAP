@@ -446,7 +446,8 @@ gt_classes = list(gt_counter_per_class.keys())
 # let's sort the classes alphabetically
 gt_classes = sorted(gt_classes)
 n_classes = len(gt_classes)
-#print(gt_classes)
+print(f"gt_classes = {gt_classes}")
+print(f"n_classes = {n_classes}")
 #print(gt_counter_per_class)
 
 """

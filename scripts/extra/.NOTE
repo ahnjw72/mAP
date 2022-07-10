@@ -1,7 +1,8 @@
 
 ==========================================================================================================
 python convert_gt_yolo.py    : convert from YOLO to VOC format
-python coy_cctv_ground_truth.py : copy required set of gt files from ~/Work/darknet/data/cctv/setnn
+python copy_cctv_ground_truth.py : copy required set of gt files from ~/Work/darknet/data/cctv/setnn
+python intersect-gt-and-dr.py : get the intersection of ground-truth and detection-result and sync them
 
 python eval_trt_yolo_spacenorm.py : batch mAP evaluation from trt_yolo_spacenorm detection for each set
 (pre-requisites for this batch evaluation is described in research note (Jul.03,2021)
